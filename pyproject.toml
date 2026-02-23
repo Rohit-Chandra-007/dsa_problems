@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.129.0",
+    "uvicorn>=0.40.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.1",
+    "ty>=0.0.17",
+]
+[project.scripts]
+dev = "main:run"
+start = "main:start"
+
+[tool.uv]
+package = true  
