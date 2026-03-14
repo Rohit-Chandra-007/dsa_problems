@@ -15,8 +15,8 @@ dev = [
     "ty>=0.0.17",
 ]
 [project.scripts]
-dev = "main:run"
-start = "main:start"
+dev = "app.main:dev"
+start = "app.main:start"
 
 [tool.uv]
-package = true  
+package = true
