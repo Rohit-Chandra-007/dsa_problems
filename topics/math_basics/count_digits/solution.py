@@ -10,3 +10,11 @@ def count_digits_divisible(n: int) -> int:
             count += 1
         n = n // 10
     return count
+
+
+def count_digits(n: int) -> int:
+    count = 0
+    while n > 0:
+        n = n // 10
+        count += 1
+    return count
